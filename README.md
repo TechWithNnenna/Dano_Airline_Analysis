@@ -9,10 +9,10 @@ This project analyzes survey responses from 129,880 passengers to identify the s
 - Includes: passenger demographics, flight details (distance, delays), travel class, and ratings (0–5 scale) across 14 service touchpoints; including Wi-Fi, online booking, gate location, check-in, seat comfort, cleanliness, and in-flight service.
 
 ## Data Cleaning And MOdeling
-- Missing values: The Arrival Delay column had 393 missing values (0.3% of records). These were replaced with the column median, which was 0 — reflecting that most flights in the dataset arrive on time or early, so the median is a more representative fill value than the mean, which would be skewed upward by extreme delay outliers.
+- Missing values: The Arrival Delay column had 393 missing values (0.3% of records). These were replaced with the column median, which was 0, reflecting that most flights in the dataset arrive on time or early, so the median is a more representative fill value than the mean, which would be skewed upward by extreme delay outliers.
 - Verification: All other columns were confirmed to have zero missing values across all 129,880 rows, so no other imputation was needed.
 - Column removal: The ID column was dropped — it carries no analytical value, and COUNTROWS() is used instead for all passenger counts, which avoids any dependency on a specific column being null-free.
-- Unpivoting: The 14 individual service rating columns were unpivoted into two columns — Service Factor and Rating — so all factors could be ranked and compared in a single visual rather than building one chart per factor.
+- Unpivoting: The 14 individual service rating columns were unpivoted into two columns; Service Factor and Rating. So all factors could be ranked and compared in a single visual rather than building one chart per factor.
 
 ##DAX Measure
 - Total Passengers = COUNTROWS(AirlineSatisfaction)
