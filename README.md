@@ -35,14 +35,14 @@ This project analyzes survey responses from 129,880 passengers to identify the s
 - Prioritize Economy class — it shows the highest share of dissatisfaction of any cabin, so digital and ground-experience fixes should be rolled out there first for the largest impact on overall satisfaction.
 
   
-## Dashboard
-The final deliverable is a single-page Power BI dashboard combining:
+## Dashboard Page 
+Page 1- Dano Airline Analysis which includes:
 - A headline KPI card (43.4% Satisfied)
 - A ranked bar chart of all 14 service factors by average rating
 - A satisfaction breakdown by travel class
 - A recommendations panel tying the insights to specific action items
 
 ## Dashboard Screenshot
-
+![Dano Airline Analysis](DanoAirline.png)
 
 *Capstone* *project* *for* *DigitaleyDive* *Data* *Analyst* *Bootcamp* — *submitted* *by* *Blessing*
